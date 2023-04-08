@@ -1,0 +1,245 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+body{
+    margin:0;
+    padding:0px;
+    box-sizing: content-box;
+    background-color: #E9F1FA !important;
+}
+
+.serif{
+    font-family: serif;
+}
+
+/* nav bar section  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+    background-color: rgb(15, 119, 238);
+    height:auto;
+}
+
+header h1{
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    margin:1rem;
+}
+
+nav ul a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul a:hover{
+    color: violet
+}
+
+/* end navbar  */
+
+/* welcome area */
+.welcome-area{
+    height:450px;
+    text-align: center;
+    background-image: url(../img/welcome-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-site .welcome-area .welcome h1{
+    font-size: 50px;
+}
+
+.main-site .welcome-area .welcome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-site .welcome button{
+    width:max-content;
+    padding:.7rem;
+    border-radius: 4px;
+    font-size: 30px;
+    border:transparent;
+}
+
+/* .main-site .welcome button:hover{
+    border:2px solid red;
+    background-color: rgb(248, 8, 8);
+} */
+
+.secondary-button{
+    background: transparent;
+    background-clip: padding-box;
+}
+
+.secondary-button::after{
+    background: var(--gradient-color);
+    content: "";
+    border-radius: 4px ;
+}
+
+.secondary-button:hover{
+    background: var(--gradient-color);
+    color:whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+.secondary-button:active{
+    border:#4458dc 3px;
+    background-color: transparent;
+}
+
+
+
+:root{
+    --box-shadow: 10px 10px 30px rgba(57, 56 ,61 , 0.205);
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+}
+
+
+
+/* End welcome area */
+
+/* About Area */
+.main-site .about-us{
+    text-align: center;
+    padding:40px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main-site .about-us p{
+    line-height: 2;
+    font-size: 20px;
+}
+
+.main-site .about-us h2{
+    font-size: 50px;
+}
+/* End About Area */
+
+
+
+/* Gallery Area */
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+} 
+
+.gallery{
+    margin: 2rem 0;
+    padding: 4rem 2rem ;
+} 
+
+ .gallery .element-item{
+    margin-bottom :15px;
+} 
+
+.gallery .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px ; 
+    font-weight: bold;
+    font-family: serif;
+    text-transform: uppercase;
+
+}
+
+.gallery .button-group button + button{
+    padding-left: 3rem;
+}
+
+.gallery .grid-container {
+    margin: 2rem 0;
+}
+
+.gallery .grid-container .element-item img{
+    width: 100%;
+    height: 100%; 
+ } 
+
+.gallery h1{
+    font-weight: bold;
+}
+
+
+.gallery .grid-container :hover img{
+    -webkit-filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.gallery .button-group button:hover{
+    font-size: larger;
+}
+
+.de-active{
+    display: none;
+}
+
+.gallery .grid-container .more {
+    background: transparent;
+    border: none;
+    font: normal 500 ; 
+    font-weight: bold;
+    font-family: serif;
+    font-size: large;
+    color: rgb(66, 66, 243);
+    text-align: left;
+}
+
+
+
+/* End Gallery Area */
+
+/* footer Area  */
+footer.footer-area{
+    padding-top:5rem ;
+
+}
+
+footer.footer-area .social h5{
+    font:normal 500 23px/30px ;
+}
+
+footer.footer-area .social a>i{
+    font-size:22px;
+    padding:2rem;
+    color:var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+/* End Footer Area */
